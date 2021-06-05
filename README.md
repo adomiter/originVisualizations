@@ -38,15 +38,24 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 
 1. we needed to collect the data and clean the data for the visualizations. Predicitons were randomized given that they are based on a proprietary model. Not too much information can be said about this method. 
 
-2. Then, we created the visualization for the Census data in Kepler.gl. A lot of processing was done initially. This included using a Census API and cleaning the data at the census tract level. Unfortunately, this resulted in a huge amount of data that would not load fast enog. Moreover, we felt that the functionality of Kepler.gl could give users the abitlity to really explore the data they chose. We included only data relevant to the discussion of properties. The main points of Kepler.gl that we likes was changing the background map, adding custom filters, the tool tip which is displayed as the user hovers over the 
+2. Then, we created the visualization for the Census data in Kepler.gl. A lot of processing was done initially. This included using a Census API and cleaning the data at the census tract level. Unfortunately, this resulted in a huge amount of data that would not load fast enog. Moreover, we felt that the functionality of Kepler.gl could give users the abitlity to really explore the data they chose. We included only data relevant to the discussion of properties. 
+ - Change the basemap
+ - Style the census tract polygons 
+ - Modify the tool tip to include the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
 
-To identify point patterns, we decided to create an interactive map displaying submarkets as polygons and properties as points. The tool tip displays the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
 
 3. Finally, we created the visualization for the Rent Prediction date in a Shiny app. 
-3a. To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. 
-3b. Instead of using an Rmarkdown we created an Shiny Web App. 
-3c. Define UI for application. We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. Then, we set the application title. We wanted the app to be intuitive, not overwhelming so we decided on a sidebar with a dropdown menu and slider. Within the UI, how a plot of the generated distribution
-3d. The server side of the app consisted of adding the map based on the user's choice of variable. 
+ - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. 
+ - Instead of using an Rmarkdown we created an Shiny Web App. 
+ - Define UI for application. 
+  - We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
+  - Then, we set the application title. 
+  - We wanted the app to be intuitive, not overwhelming so we decided on a sidebar with a dropdown menu and slider. 
+  - Within the UI, how a plot of the generated distribution
+ - Define server logic required to draw the map. 
+  - Modify the data displayed using the input choice 
+  - Modify the legend using the input choice 
+  - Create the desired map  
 
 
 
