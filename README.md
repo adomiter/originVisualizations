@@ -15,8 +15,20 @@ Real Estate Investment Trusts, (REITS), specifically those which focus on Multif
 
 ## Data Sources, Spatial and Temporal Scale
 
-The spatial scale is property level although we aggregate up to a submarket scale. The temporal scale is 2008 to 2021. 
-The data sources of interest include 2019 / 2018 Five Year Average ACS data with the following variables: YOY (Year over Year) Population, Population Density, Renters, Owners, Median Household Income, YOYHouseholdIncome, Median Age, PercentWhite, PercentBlack, PercentHispanic, PercentAsian, PercentAmericanIndian, PercentTwoOrMoreRaces, PercentLessThanHighShcool, PercentHighSchool, PercentSomeCollege, PercentBachlores, PercentGraduate, PercentMarried, RetailReviews 
+
+|                      Variable Name                     |                                                               Description                                                              |    Granularity   |            Source            |
+|:------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|:----------------------------:|
+| Population                                             | Estimated Total Population                                                                                                             | Census Tract     | 2019 ACS (Five Year Average) |
+| Population Density                                     | Population divided by census tract area (in kilometers)                                                                                | Census Tract     | 2019 ACS (Five Year Average) |
+| Median Household Income                                | Median Household Income in the past 12 months                                                                                          | Census Tract     | 2019 ACS (Five Year Average) |
+| Income Growth Rate                                     | Growth Rate of the difference between 2019 Median Household Income and the 2018 Median Household Income (Both From 5 year average ACS) | Census Tract     | 2019 ACS (Five Year Average) |
+| Census Rent                                            | Median Gross Rent                                                                                                                      | Census Tract     | 2019 ACS (Five Year Average) |
+| Rent Affordability Ratio                               | Census rent times twelve divided by Median Household Income                                                                            | Census Tract     | 2019 ACS (Five Year Average) |
+| Renter Proportion                                      | Renter-occupied housing units / (Renter-occupied housing units + Owner-occupied housing units)                                         | Census Tract     | 2019 ACS (Five Year Average) |
+| Units Per Capita                                       | Total Renter-occupied housing units / Population                                                                                       | Census Tract     | 2019 ACS (Five Year Average) |
+| Number of Properties                                   | Number of Multifamily Apartments Within A Submarket (Point in Polygon)                                                                 | Sample Submarket | MPF Research Inc             |
+| Year over Year Effective Rent Growth Rate              | Growth Rate Between Average Submarket Effective Rent in February 2021 and February 2020                                                | Sample Submarket | MPF Research Inc             |
+| Predicted Five Year Average Effective Rent Growth Rate | Projected Average Annual Effective Rent Growth from February 2021 to February 2026                                                     | Sample Submarket | MPF Research Inc             |
 
 
 ## Methods Used 
