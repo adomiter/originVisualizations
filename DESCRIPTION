@@ -2,10 +2,15 @@ Package: originVisualizations
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Andrea",
+           family = "Domiter",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "adomiter@uchicago.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Ryan",
+           family = "Brown",
+           role = c("aut", "cre"),
+           email = "rbrown55@uchicago.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
