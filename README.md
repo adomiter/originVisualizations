@@ -33,9 +33,15 @@ Real Estate Investment Trusts, (REITS), specifically those which focus on Multif
 
 ## Methods Used 
 
-The two softwares we will be using to create our maps is Kepler.gl and ShinyApp.
-To visualize Census data .
-To identify point patterns, we decided to create an interactive map displaying submarkets as polygons and properties as points. 
+Our methodology revolved around the two visualizations we wanted to create, one in Kepler.gl and one in ShinyApp. 
+
+First, we needed to collect the data and clean the data for the visualizations.
+
+Then, we created the visualization for the Census data in Kepler.gl. A lot of processing was done initially. This included using a Census API and cleaning the data at the census tract level. Unfortunately, this resulted in a huge amount of data that would not load fast enog. Moreover, we felt that the functionality of Kepler.gl could give users the abitlity to really explore the data they chose. We included only data relevant to the discussion of properties. The main points of Kepler.gl that we likes was changing the background map, adding custom filters, the tool tip which is displayed as the user hovers over the 
+To identify point patterns, we decided to create an interactive map displaying submarkets as polygons and properties as points. The tool tip displays the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
+
+Then, we created the visualization for the Rent Prediction date in a Shiny app. To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. Then, instead of using an Rmarkdown we created an Shiny Web App. For the app itself, there were two main parts that we focused on: the UI and Server. The UI consisted of customizing the look of our final app by determining the widgets we wanted to add and the style. We wanted the app to be intuitive, not overwhelming so we decided The server side of the app consisted of 
+
 
 
 ## Results
