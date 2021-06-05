@@ -48,14 +48,14 @@ Our methodology revolved around the two visualizations we wanted to create, one 
  - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. 
  - Instead of using an Rmarkdown we created an Shiny Web App. 
  - Define UI for application. 
-  - We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
-  - Then, we set the application title. 
-  - We wanted the app to be intuitive, not overwhelming so we decided on a sidebar with a dropdown menu and slider. 
-  - Within the UI, how a plot of the generated distribution
+  + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
+  + Then, we set the application title. 
+  + We wanted the app to be intuitive, not overwhelming so we decided on a sidebar with a dropdown menu and slider. 
+  + Within the UI, how a plot of the generated distribution
  - Define server logic required to draw the map. 
-  - Modify the data displayed using the input choice 
-  - Modify the legend using the input choice 
-  - Create the desired map  
+  + Modify the data displayed using the input choice 
+  + Modify the legend using the input choice 
+  + Create the desired map  
 
 
 
