@@ -25,10 +25,13 @@ The two softwares we will be using to create our maps is Kepler.gl and ShinyApp.
 To visualize the public data, we decided to create an animated map for Census data.
 To identify point patterns, we decided to create an interactive map displaying submarkets as polygons and properties as points. 
 
+
 ## Results
+### Using Kepler.gl
 
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
  
+### Using RShiny 
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
 
 
