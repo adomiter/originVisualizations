@@ -1,0 +1,13 @@
+name: OriginViz
+title: OriginViz
+username:
+account: ryan-brown
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4233126
+bundleId: 4682101
+url: https://ryan-brown.shinyapps.io/OriginViz/
+when: 1622931222.72148
+lastSyncTime: 1622931222.72152
+asMultiple: FALSE
+asStatic: FALSE
