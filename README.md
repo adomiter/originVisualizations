@@ -6,7 +6,7 @@ Our goal is to create a suite of visualizations pertaining to predictive analyti
 
 * Leverage Kepler GL to allow for fast exploration of vast amounts of census data
 * Create an R-Shiny Application that maps key multifamily variables: supply (number of properites), current effective rent, YoY effective rent and projected effective rent growth. 
-* Provide clear explanation on each variable as well as an overview of methods used in creating prediction
+* Provide clear explanation of methodology used to create each data visualization
 
 
 ## Background and Motivation
