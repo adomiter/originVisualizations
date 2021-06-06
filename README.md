@@ -44,26 +44,23 @@ To generate the "Number of Properties’” variable for each submarket we used 
 
 Our methodology revolved around the two visualizations we wanted to create, one in Kepler.gl and one in ShinyApp. 
 
-1. we needed to collect the data and clean the data for the visualizations. Predicitons were randomized given that they are based on a proprietary model. Not too much information can be said about this method. 
+1. We first collected the data and cleaned the data for the visualizations. Predicitons were randomized given that they are based on a proprietary model. Not too much information can be said about this method as it would reveal private information. 
 
-2. Then, we created the visualization for the Census data in Kepler.gl. A lot of processing was done initially. This included using a Census API and cleaning the data at the census tract level. Unfortunately, this resulted in a huge amount of data that would not load fast enog. Moreover, we felt that the functionality of Kepler.gl could give users the abitlity to really explore the data they chose. We included only data relevant to the discussion of properties. 
- - Change the basemap
- - Style the census tract polygons 
- - Modify the tool tip to include the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
+2. Then, we created the visualization for the Census data in Kepler.gl. With the Census data already cleaned we added the dataset to Kepler.gl. We included only data relevant to the discussion of properties. To prepare a final version of this visualization, we changed the basemap to Dark with no labels to highlight the census tract polygons. We styled the census tract polygons to a bright orange shade. Lastly, we modified the tool tip to include the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
 
 
-3. Finally, we created the visualization for the Rent Prediction date in a Shiny app. 
- - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. 
- - Instead of using an Rmarkdown we created an Shiny Web App. 
- - Define UI for application. 
-   + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
-   + Then, we set the application title. 
-   + Created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
-   + Within the UI, how a plot of the generated distribution
- - Define server logic required to draw the map. 
-   + Modify the data displayed using the input choice 
-   + Modify the legend using the input choice 
-   + Create the desired map  
+3. Lastly, we created the visualization for the Rent Prediction date in a Shiny app. 
+ - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. Instead of using an Rmarkdown we created an Shiny Web App which consisted of three main parts.
+  - First, load the packages.
+  - Secondly, we define UI for application. 
+    + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
+    + Then, we set the application title to Origin Effective Rent Dashboard. 
+    + Nest, we created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
+    + Within the UI, the choropleth map is shown to the right of the sidebar panel.
+  - Thirdly, we define the server logic required to draw the map. 
+    + Modify the data displayed using the input choice 
+    + Modify the legend using the input choice 
+    + Create the desired map  
 
 
 
@@ -72,11 +69,9 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 #### Using Kepler.gl
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
 To add a filter:
- - Select Filters from the left navigation bar. 
- - The Filters panel displays the list of existing filters, color-coded by dataset. To create a new filter, Click Add Filter.
+ - Select Filters from the left navigation bar and select Add a Filter.
  - Choose a dataset, and then a field on which to filter your data. Filter values are defined by field data type (number, string, timestamp, etc.). 
- - Your filter is applied to your map as soon as you specify the field and value.
- - Delete a filter anytime by clicking the trashcan to the right of the filter you wish to delete.
+ - The filter is applied to your map as soon as you specify the field and value.
 To change the Base map:
  - Select BaseMap from the right navigation bar. 
  - Open the base map style drop down menu to change map color scheme and imagery. Options include:
@@ -89,16 +84,16 @@ To modify the tooltip (the displayed metrics when hovering over a data point):
 
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
 To choose a variable to display:
-- Use the dropdown menu to select
+- Select the current variable to trigger a dropdown menu from which you can change the variable of interest. 
 To modify the range:
-- Use the two buttons of the slider 
+- Click and drag the two buttons on the slider to select the range of interest.
 
 
 ## Main Highlights
 
-## Limitations, Future Work, Conclusion
+## Limitations, Future Work, and Conclusion
 
-Both Kepler.gl and RShiny have limitations. Kepler.gl handles large datasets well and allows for users to pick and choose how they wanted to display or modify the data. However, Kepler.gl is not intuitive. It comes with a learning curve making it hard for just anyone to interpret the maps right away. In contrast, RShiny's dashboard is easy to follow and allows the user to modify the data displayed in a more intuitive way. With this in mind, RShiny cannot handle data at the same scale as Kepler.gl. 
+Both Kepler.gl and RShiny have their limitations. Kepler.gl handles large datasets well and allows for the user to pick and choose how they want to display or modify the data. However, Kepler.gl is not intuitive. It comes with a learning curve making it hard for just anyone to interpret the maps right away. In contrast, RShiny's dashboard is easy to follow and allows the user to modify the data displayed in a more intuitive way. With this in mind, RShiny cannot handle data at the same scale as Kepler.gl. 
 In the future, we would like to create one dashboard to hold all of the information provided today. Ideally, this dashboard would have a user interface similar to the RShiny app we created but with the backend capabilities of Kepler.gl. Both maps provide a great way to explore the data listed in regard to the real estate. 
 Overall, we were able to successfully create the suite of visualizations for predictive analytics for Multifamily Real Estate. These visualizations leverage Kepler GL to allow for fast exploration of vast amounts of census data and R-Shiny Application that maps key multifamily variables.
 
