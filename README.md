@@ -6,7 +6,7 @@ Our goal is to create a suite of visualizations pertaining to predictive analyti
 
 * Leverage Kepler GL to allow for fast exploration of vast amounts of census data
 * Create an R-Shiny Application that maps key multifamily variables: supply (number of properites), current effective rent, YoY effective rent and projected effective rent growth. 
-* Provide clear explanition on each variable as well as an overview of methods used in creating prediction
+* Provide clear explanation on each variable as well as an overview of methods used in creating prediction
 
 
 ## Background and Motivation
@@ -94,9 +94,13 @@ To modify the range:
 - Use the two buttons of the slider 
 
 
-
 ## Main Highlights
 
 ## Limitations, Future Work, Conclusion
+
+Both Kepler.gl and RShiny have limitations. Kepler.gl handles large datasets well and allows for users to pick and choose how they wanted to display or modify the data. However, Kepler.gl is not intuitive. It comes with a learning curve making it hard for just anyone to interpret the maps right away. In contrast, RShiny's dashboard is easy to follow and allows the user to modify the data displayed in a more intuitive way. With this in mind, RShiny cannot handle data at the same scale as Kepler.gl. 
+In the future, we would like to create one dashboard to hold all of the information provided today. Ideally, this dashboard would have a user interface similar to the RShiny app we created but with the backend capabilities of Kepler.gl. Both maps provide a great way to explore the data listed in regard to the real estate. 
+Overall, we were able to successfully create the suite of visualizations for predictive analytics for Multifamily Real Estate. These visualizations leverage Kepler GL to allow for fast exploration of vast amounts of census data and R-Shiny Application that maps key multifamily variables.
+
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
