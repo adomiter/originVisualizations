@@ -49,7 +49,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 2. Then, we created the visualization for the Census data in Kepler.gl. With the Census data already cleaned we added the dataset to Kepler.gl. We included only data relevant to the discussion of properties. To prepare a final version of this visualization, we changed the basemap to Dark with no labels to highlight the census tract polygons. We styled the census tract polygons to a bright orange shade. Lastly, we modified the tool tip to include the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
 
 
-3. Lastly, we created the visualization for the Rent Prediction date in a Shiny app. 
+3. Then, we created the visualization for the Rent Prediction date in a Shiny app. 
  - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. Instead of using an Rmarkdown we created an Shiny Web App which consisted of three main parts.
   - First, load the packages.
   - Secondly, we define UI for application. 
@@ -57,7 +57,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
     + Then, we set the application title to Origin Effective Rent Dashboard. 
     + Nest, we created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
     + Within the UI, the choropleth map is shown to the right of the sidebar panel.
-  - Thirdly, we define the server logic required to draw the map. 
+  - Third, we define the server logic required to draw the map. 
     + Modify the data displayed using the input choice 
     + Modify the legend using the input choice 
     + Create the desired map  (note that lines separating polygons are toggled off as requested by target users)
@@ -89,6 +89,7 @@ For an introduction to naviagating kepler maps please see this [link](https://do
 #### Using RShiny 
 
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
+
 To choose a variable to display:
 - Select the current variable to trigger a dropdown menu from which you can change the variable of interest. 
 To modify the range:
