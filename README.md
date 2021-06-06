@@ -50,7 +50,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
  - Define UI for application. 
    + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
    + Then, we set the application title. 
-   + We wanted the app to be intuitive, not overwhelming so we decided on a sidebar with a dropdown menu and slider. 
+   + Created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
    + Within the UI, how a plot of the generated distribution
  - Define server logic required to draw the map. 
    + Modify the data displayed using the input choice 
@@ -62,8 +62,12 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 ## Results
 #### Using Kepler.gl
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
-
-Walking through Kepler.gl - For the Kepler.gl visualizations we wanted ot give
++ Add filters to your map to limit the data that is displayed. Filters must be based on the columns in your dataset. To add a filter:
+ -Select Filters from the right navigation bar. 
+ -The Filters panel displays the list of existing filters, color-coded by dataset. To create a new filter, Click Add Filter.
+ -Choose a dataset, and then a field on which to filter your data. Filter values are defined by field data type (number, string, timestamp, etc.). 
+ -Your filter is applied to your map as soon as you specify the field and value.
+ -Delete a filter anytime by clicking the trashcan to the right of the filter you wish to delete.
  
 #### Using RShiny 
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
