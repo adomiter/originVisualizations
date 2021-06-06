@@ -55,13 +55,12 @@ Our methodology revolved around the two visualizations we wanted to create, one 
   - Secondly, we define UI for application. 
     + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
     + Then, we set the application title to Origin Effective Rent Dashboard. 
-    + Nest, we created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
+    + Next, we created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
     + Within the UI, the choropleth map is shown to the right of the sidebar panel.
   - Third, we define the server logic required to draw the map. 
     + Modify the data displayed using the input choice 
     + Modify the legend using the input choice 
     + Create the desired map  (note that lines separating polygons are toggled off as requested by target users)
-
 
 
 ## Results
@@ -81,8 +80,8 @@ To change the Base map:
 To modify the tooltip (the displayed metrics when hovering over a data point):
  - Choose which fields are displayed from the tooltip configuration menu.
 To change the variable mapped 
- - select the three dots next to polygon fill 
- - select desired column 
+ - Select the three dots next to polygon fill 
+ - Select desired column 
 
 For an introduction to naviagating kepler maps please see this [link](https://docs.kepler.gl/docs/user-guides)
 
