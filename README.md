@@ -67,15 +67,23 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 ## Results
 #### Using Kepler.gl
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
-+ Add filters to your map to limit the data that is displayed. Filters must be based on the columns in your dataset. To add a filter:
- -Select Filters from the right navigation bar. 
- -The Filters panel displays the list of existing filters, color-coded by dataset. To create a new filter, Click Add Filter.
- -Choose a dataset, and then a field on which to filter your data. Filter values are defined by field data type (number, string, timestamp, etc.). 
- -Your filter is applied to your map as soon as you specify the field and value.
- -Delete a filter anytime by clicking the trashcan to the right of the filter you wish to delete.
- 
++ To add a filter:
+ - Select Filters from the right navigation bar. 
+ - The Filters panel displays the list of existing filters, color-coded by dataset. To create a new filter, Click Add Filter.
+ - Choose a dataset, and then a field on which to filter your data. Filter values are defined by field data type (number, string, timestamp, etc.). 
+ - Your filter is applied to your map as soon as you specify the field and value.
+ - Delete a filter anytime by clicking the trashcan to the right of the filter you wish to delete.
++ To change the Base map:
+ - Open the base map style drop down menu to change map color scheme and imagery. Options include:
+    + Dark: dark base map with light-colored text.
+    + Light: light base map with dark-colored text.
++ tooltip displays metrics when hovering over a data point. You can choose which fields are displayed from the tooltip config menu.
+
 #### Using RShiny 
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
++ Use the dropdown menu to select
++
++
 
 
 ## Discussion of Results/Findings/Main Highlights
