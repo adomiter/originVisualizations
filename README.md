@@ -68,6 +68,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 
 #### Using Kepler.gl
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
+
 To add a filter:
  - Select Filters from the left navigation bar and select Add a Filter.
  - Choose a dataset, and then a field on which to filter your data. Filter values are defined by field data type (number, string, timestamp, etc.). 
@@ -94,15 +95,10 @@ To modify the range:
 These dashboards should function to drastically reduce time spent underwriting different properties given all census data for each tract can be found in a single location and the same can be said for submarket predictions. That being said each dashboard is built to enable quick exploratory data analysis of variables pertinent to Multifamily real estate. To begin consider the Kepler dashboard. While it begins with many tracts one can add filters for specific counties they are interested in and the produce choropleth maps of their variable of interest for the number of bins they desire. They can then export an image of the results to include in a presentation or save for later analysis. The Shiny dashboard is quite useful given its agile structure and ability to enable quick identification of high growth locations via the sliders this in turn enables analysts to identify interesting submarkets within four clicks! 
 
 ![Population Density](Kepler.png)
+
 ![Dallas Median Household Income](medianIDallas.png)
+
 ![Dallas Predicted Rent Growth Distribution](RentPredDallas.png)
-
-
-
-
-
-
-
 
 ## Limitations, Future Work, and Conclusion
 
