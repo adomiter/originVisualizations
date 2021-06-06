@@ -52,7 +52,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 3. Then, we created the visualization for the Rent Prediction date in a Shiny app. 
  - To do this, we first created an account on Shinyapps.io which would allow us to store and run our final app on webpage. Using 'rsconnect' we were able to set the account information within RStudio. Instead of using an Rmarkdown we created an Shiny Web App which consisted of three main parts.
   - First, load the packages.
-  - Secondly, we define UI for application. 
+  - Second, we define UI for application. 
     + We started with setting the theme of the UI using one of the custom Bootstrap Sass themes. 
     + Then, we set the application title to Origin Effective Rent Dashboard. 
     + Next, we created a sidebar panel with a dropdown menu and slider. The dropdown menu allows the user to choose from the following choices: Number of Properties, Mean Current Effective Rent, Year over Year Effective Rent Growth Rate, and Predicted Five Year Average Effective Rent Growth Rate. 
