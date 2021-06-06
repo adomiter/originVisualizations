@@ -9,11 +9,11 @@ Our goal is to create a suite of visualizations pertaining to predictive analyti
 * Provide clear explanition on each variable as well as an overview of methods used in creating prediction
 
 
-## Background, Motivation
+## Background and Motivation
 
 Real Estate Investment Trusts, (REITS), specifically those which focus on Multifamily properties, are one of the few financial institutions yet to widely adopt advances in geocomputation yet they simultaneously stand to benefit from such advances given the inherently spatial process of selecting assets whether they be for development or acquisition. Moreover, given the wide array of different neighborhoods within the United States it is often difficult for smaller firms to adequately understand the makeup of each area for which they may consider investing. Therefore, a better understanding of place via an all inclusive dashboard will help optimize deal flow. Moreover, an understanding of which areas will see the highest rent growth, arguably the most important metric for whether or not an investment is successful, allows for firms to narrow their scope leading to a more effective utilization of capital. 
 
-## Data Sources, Spatial and Temporal Scale
+## Data Sources and Scale
 
 |                      Variable Name                     |                                                               Description                                                              |  Granularity |            Source            |
 |:------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:----------------------------:|
@@ -68,6 +68,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
 
 
 ## Results
+
 #### Using Kepler.gl
 For the census explorer map hosted in Kepler.gl please navigate to this [link](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/2o334e8zxyzbyp0/keplergl_2q1fwt.json)
 To add a filter:
@@ -85,6 +86,7 @@ To modify the tooltip (the displayed metrics when hovering over a data point):
 -Choose which fields are displayed from the tooltip config menu.
 
 #### Using RShiny 
+
 For the submarket effective rent map hosted in RShiny please navigate to this [link](https://ryan-brown.shinyapps.io/OriginViz/?_ga=2.82723859.406696026.1622923111-1591203086.1622923111)
 To choose a variable to display:
 - Use the dropdown menu to select
@@ -93,7 +95,7 @@ To modify the range:
 
 
 
-## Discussion of Results/Findings/Main Highlights
+## Main Highlights
 
 ## Limitations, Future Work, Conclusion
 
