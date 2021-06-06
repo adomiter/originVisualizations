@@ -1,5 +1,5 @@
 Package: originVisualizations
-Title: What the Package Does (One Line, Title Case)
+Title: Our goal is to create a suite of visualizations pertaining to predictive analytics for Multifamily Real Estate as well as key variables.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Andrea",
