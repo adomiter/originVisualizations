@@ -11,7 +11,7 @@ Our goal is to create a suite of visualizations pertaining to predictive analyti
 
 ## Background and Motivation
 
-Real Estate Investment Trusts, (REITS), specifically those which focus on Multifamily properties, are one of the few financial institutions yet to widely adopt advances in geocomputation yet they simultaneously stand to benefit from such advances given the inherently spatial process of selecting assets whether they be for development or acquisition. Moreover, given the wide array of different neighborhoods within the United States it is often difficult for smaller firms to adequately understand the makeup of each area for which they may consider investing. Therefore, a better understanding of place via an all inclusive dashboard will help optimize deal flow. Moreover, an understanding of which areas will see the highest rent growth, arguably the most important metric for whether or not an investment is successful, allows for firms to narrow their scope leading to a more effective utilization of capital. 
+Real Estate Investment Trusts, (REITS), specifically those which focus on multifamily properties, are one of the few financial institutions yet to widely adopt advances in geocomputation yet they simultaneously stand to benefit from such advances given the inherently spatial process of selecting assets whether they be for development or acquisition. Moreover, given the wide array of different neighborhoods within the United States it is often difficult for smaller firms to adequately understand the makeup of each area for which they may consider investing. Therefore, a better understanding of place via an all inclusive dashboard will help to optimize deal flow. Moreover, an understanding of which areas will see the highest rent growth, arguably the most important metric for whether or not an investment is successful, allows for firms to narrow their scope leading to a more effective utilization of capital. 
 
 ## Data Sources and Scale
 
@@ -33,7 +33,7 @@ Real Estate Investment Trusts, (REITS), specifically those which focus on Multif
 | Year over Year Effective Rent Growth Rate              | Growth Rate Between Weighted Average Submarket Effective Rent in February 2021 and February 2020                                       | Submarket    | MPF Research Inc             |
 | Predicted Five Year Average Effective Rent Growth Rate | Projected Average Annual Effective Rent Growth from February 2021 to February 2026                                                     | Submarket    | MPF Research Inc             |
 
-There are two spatial scales of interest here separated into two different visualizations to allow for more straightforward utilization. The fist spatial scale to consider would be census tracts as defined by the United States Census Bureau and the second are our proprietary submarkets which have been substantially altered for public use in the form they appear here. Data from census tracts is pulled from both the 2019 and 2018 Five Year Average American Community Survey (ACS). 
+There are two spatial scales of interest here separated into two different visualizations to allow for more straightforward utilization. The first spatial scale to consider would be census tracts as defined by the United States Census Bureau and the second are our proprietary submarkets which have been substantially altered for public use in the form they appear here. Data from census tracts is pulled from both the 2019 and 2018 Five Year Average American Community Survey (ACS). 
 
 The ‘submarkets’ used here are a very early iteration of our own proprietary submarkets based on results from a spatially constrained multivariate k-medians clustering algorithm which took in the location of private multifamily properties as well as their attributes (Number of floors, Effective Rent, Occupancy and so fourth). We are not able to supply any form of property specific data here however, if it is of interest this data is provided by MPF Research. 
 
@@ -44,7 +44,7 @@ To generate the "Number of Properties’” variable for each submarket we used 
 
 Our methodology revolved around the two visualizations we wanted to create, one in Kepler.gl and one in ShinyApp. 
 
-1. We first collected the data and cleaned the data for the visualizations. Predicitons were randomized given that they are based on a proprietary model. Not too much information can be said about this method as it would reveal private information. 
+1. We first collected the data and cleaned the data for the visualizations. Predictions were randomized given that they are based on a proprietary model. Not too much information can be said about this method as it would reveal private information. 
 
 2. Then, we created the visualization for the Census data in Kepler.gl. With the Census data already cleaned we added the dataset to Kepler.gl. We included only data relevant to the discussion of properties. To prepare a final version of this visualization, we changed the basemap to Dark with no labels to highlight the census tract polygons. We styled the census tract polygons to a bright orange shade. Lastly, we modified the tool tip to include the following pieces of information: population, population density, median household income, income growth rate, population growth rate, census rent, rent affordability ratio, renter proportion, and units per capita. 
 
@@ -60,7 +60,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
   - Thirdly, we define the server logic required to draw the map. 
     + Modify the data displayed using the input choice 
     + Modify the legend using the input choice 
-    + Create the desired map  (note that lines seperating polygons are toggled off as requested by target users)
+    + Create the desired map  (note that lines separating polygons are toggled off as requested by target users)
 
 
 
@@ -79,7 +79,12 @@ To change the Base map:
     + Dark: dark base map with light-colored text.
     + Light: light base map with dark-colored text.
 To modify the tooltip (the displayed metrics when hovering over a data point):
--Choose which fields are displayed from the tooltip config menu.
+ - Choose which fields are displayed from the tooltip configuration menu.
+To change the variable mapped 
+ - select the three dots next to polygon fill 
+ - select desired column 
+
+For an introduction to naviagating kepler maps please see this [link](https://docs.kepler.gl/docs/user-guides)
 
 #### Using RShiny 
 
