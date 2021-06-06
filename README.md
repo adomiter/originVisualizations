@@ -60,7 +60,7 @@ Our methodology revolved around the two visualizations we wanted to create, one 
   - Thirdly, we define the server logic required to draw the map. 
     + Modify the data displayed using the input choice 
     + Modify the legend using the input choice 
-    + Create the desired map  
+    + Create the desired map  (note that lines seperating polygons are toggled off as requested by target users)
 
 
 
