@@ -91,6 +91,7 @@ For the submarket effective rent map hosted in RShiny please navigate to this [l
 
 To choose a variable to display:
 - Select the current variable to trigger a dropdown menu from which you can change the variable of interest. 
+
 To modify the range:
 - Click and drag the two buttons on the slider to select the range of interest.
 
