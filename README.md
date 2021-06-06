@@ -91,6 +91,9 @@ To modify the range:
 
 ## Main Highlights
 
+These dashboards should function to drastically reduce time spent underwriting different properties given all census data for each tract can be found in a single location and the same can be said for submarket predictions. That being said each dashboard is built to enable quick exploratory data analysis of variables pertinent to Multifamily real estate. To begin consider the Kepler dashboard. While it begins with many tracts one can add filters for specific counties they are interested in and the produce choropleth maps of their variable of interest for the number of bins they desire. They can then export an image of the results to include in a presentation or save for later analysis. The Shiny dashboard is quite useful given its agile structure and ability to enable quick identification of high growth locations via the sliders this in turn enables analysts to identify interesting submarkets within four clicks! 
+
+
 ## Limitations, Future Work, and Conclusion
 
 Both Kepler.gl and RShiny have their limitations. Kepler.gl handles large datasets well and allows for the user to pick and choose how they want to display or modify the data. However, Kepler.gl is not intuitive. It comes with a learning curve making it hard for just anyone to interpret the maps right away. In contrast, RShiny's dashboard is easy to follow and allows the user to modify the data displayed in a more intuitive way. With this in mind, RShiny cannot handle data at the same scale as Kepler.gl. 
